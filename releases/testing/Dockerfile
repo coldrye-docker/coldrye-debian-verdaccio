@@ -9,5 +9,7 @@ RUN set -x \
 
 ADD ["conf/sinopia.yaml", "/var/storages/npm/"]
 
+VOLUME ["/var/storages/npm"]
+
 CMD ["sinopia", "-c", "/var/storages/npm/sinopia.yaml"]
 
