@@ -5,7 +5,7 @@
 
 ## Description
 
-This packages https://github.com/verdaccio/verdaccio using the most recent tag based on coldrye/debian-nodejs:4-x-*-latest.
+This packages the most rececent verdaccio from npm based on coldrye/debian-nodejs:4-x-*-latest.
 
 
 ## Image Releases

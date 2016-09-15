@@ -3,7 +3,7 @@ FROM coldrye/debian-nodejs:4-x-jessie-latest
 MAINTAINER Carsten Klein <trancesilken@gmail.com>
 
 RUN set -x \
-    && npm install -g --unsafe verdaccio/verdaccio#v2.0.1 sinopia-htpasswd \
+    && npm install -g --unsafe verdaccio sinopia-htpasswd \
     && npm cache clean \
     && mkdir -p /var/storages/npm
 
