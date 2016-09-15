@@ -7,9 +7,9 @@ RUN set -x \
     && npm cache clean \
     && mkdir -p /var/storages/npm
 
-ADD ["conf/sinopia.yaml", "/var/storages/npm/"]
+ADD ["conf/config.yaml", "/var/storages/npm/"]
 
 VOLUME ["/var/storages/npm"]
 
-CMD ["sinopia", "-c", "/var/storages/npm/sinopia.yaml"]
+CMD ["sinopia", "-c", "/var/storages/npm/config.yaml"]
 

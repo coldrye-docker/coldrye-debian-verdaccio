@@ -1,0 +1,26 @@
+version: '2'
+services:
+  npm:
+    image: coldrye/debian-verdaccio:1-4-0-jessie-latest
+    volumes:
+      - /var/storages/npm:/var/storages/npm
+#   exposes:
+#     - "8080"
+#   ports:
+#     - "8080:8080"
+#
+# web:
+#   image: coldrye/debian-nginx:1-9-x-jessie-latest
+#   volumes:
+#     - /var/storages/nginx/reverse-proxy/npm.conf:/etc/nginx/sites-enabled/npm.conf
+#     - ...
+#   depends_on:
+#     - npm
+#     - ...
+#   links:
+#     - npm
+#     - ...
+#   exposes:
+#     - "80:80"
+#     - "443:443"
+
