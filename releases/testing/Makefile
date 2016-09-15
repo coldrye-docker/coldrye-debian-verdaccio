@@ -3,8 +3,8 @@
 provider = coldrye
 os = debian
 release = testing
-feature = sinopia
-feature_version = 1-4-x
+feature = verdaccio
+feature_version = 2-0-x
 tag := $(shell date +"%Y%m%d%H%M%S")
 image = $(os)-$(feature)
 
