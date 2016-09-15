@@ -2,16 +2,12 @@
 
 releases = releases/*
 
-.PHONY: init build
+.PHONY: help build
 
 help:
-	@echo "available targets are help, init, build(init)"
+	@echo "available targets are help, build"
 
-init:
-	@git submodule init
-	@git submodule update
-
-build: init
+build:
 	@for release in $(releases); do \
 	  $(MAKE) -C $$release build; \
 	done
