@@ -11,5 +11,5 @@ ADD ["conf/config.yaml", "/var/storages/npm/"]
 
 VOLUME ["/var/storages/npm"]
 
-CMD ["sinopia", "-c", "/var/storages/npm/config.yaml"]
+CMD ["verdaccio", "-c", "/var/storages/npm/config.yaml"]
 
