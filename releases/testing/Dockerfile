@@ -11,5 +11,7 @@ ADD ["conf/config.yaml", "/var/storages/npm/"]
 
 VOLUME ["/var/storages/npm"]
 
+EXPOSE 4873/tcp
+
 CMD ["verdaccio", "-c", "/var/storages/npm/config.yaml"]
 
