@@ -33,6 +33,6 @@ htpasswd       // optional, required for basic auth
 After which the container can be created using
 
 ```
-docker create -P -v ./npm:/var/storages/npm coldrye/debian-verdaccio:1-4-x-<jessie|testing>-latest
+docker create -p 4873:4873/tcp -v $(pwd)/data:/var/storages/npm coldrye/debian-verdaccio:<TAG>
 ```
 
